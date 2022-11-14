@@ -1,0 +1,50 @@
+*{
+    
+}
+
+tr,td{
+    border: 2px solid black;
+}
+td{
+    padding: 1.15vw;
+    height: 3vh;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+.totalScore{
+    min-width: 8vw;
+    max-width: 13vw;
+}
+input[type=number]{
+    width: 10vw;
+}
+input[type=text]{
+    width: 15vw;
+}
+
+#scoreTable{
+    max-width: 78vw;
+    float:left;
+    
+}
+#scoreTableDiv{
+    overflow-x: scroll;
+    width:78vw;
+    margin:0;
+    float:left;
+}
+#addScoreTable{
+    width: 10vw;
+    float:right;
+}
+#tabela{
+    overflow: hidden;
+    margin-bottom: 2vh;
+}
+#newRound{
+    float:right;
+}
+
