@@ -1,5 +1,6 @@
-*{
-    
+body{
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(40, 170, 109, 0.589), rgba(59, 144, 201, 0.582));
 }
 
 tr,td{
@@ -8,6 +9,7 @@ tr,td{
 td{
     padding: 1.15vw;
     height: 3vh;
+    background-color: rgba(52, 207, 52, 0.514);
 }
 table{
     border-collapse: collapse;
@@ -43,6 +45,8 @@ input[type=text]{
 #tabela{
     overflow: hidden;
     margin-bottom: 2vh;
+    background-color: rgba(52, 207, 52, 0.288);
+    border:3px groove green;
 }
 #newRound{
     float:right;
