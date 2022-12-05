@@ -8,9 +8,11 @@ function newRound(){
         return
     } 
 
+
     //dodaj wyniki z rundy do totala
     for(let i=1; i<5 ;i++){
         
+       
 
         document.getElementById("player"+i+"Total").textContent = Number(document.getElementById("player"+i+"Total").textContent) + Number(document.getElementById("player"+i+"AddScore").value);
         
@@ -22,5 +24,13 @@ function newRound(){
         document.getElementById("player"+i+"Row").appendChild(kol)
         
         document.getElementById("player"+i+"AddScore").value = null
+
+
+        //cookiebuilder
+        document.cookie = "player"+i+"Name="+document.getElementById("player"+i+"Name").value+";expires=Tue, 19 Jan 2038 04:14:07 GMT"
+
+        document.cookie = "player"+i+"Score="+document.getElementById("player"+i+"Total").value+";expires=Tue, 19 Jan 2038 04:14:07 GMT"
     }
+
+    document.cookie = "player1name = "+document.getElementById(player1Name)+""
 }
