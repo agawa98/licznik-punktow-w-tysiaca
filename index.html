@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Licznik punktów w tysiąca</title>
 </head>
-<body>
+<body onload="loadscore()">
     <script src="scripts/script.js"></script>
     <h1 id="title">Licznik pkt w tysiaca</h1>
     <div id="tabela">
@@ -15,19 +15,19 @@
             <table id="scoreTable">
                 <tr id="player1Row">
                     <td class="totalScore" id="player1Total">0</td>
-                    <td id="player1Name"><input type="text"></td>
+                    <td><input id="player1Name" type="text"></td>
                 </tr>
                 <tr id="player2Row">
                     <td class="totalScore" id="player2Total">0</td>
-                    <td id="player2Name"><input type="text"></td>
+                    <td><input id="player2Name" type="text"></td>
                 </tr>
                 <tr id="player3Row">
                     <td class="totalScore" id="player3Total">0</td>
-                    <td id="player3Name"><input type="text"></td>
+                    <td><input id="player3Name" type="text"></td>
                 </tr>
                 <tr id="player4Row">
                     <td class="totalScore" id="player4Total">0</td>
-                    <td id="player4Name"><input type="text"></td>
+                    <td><input id="player4Name" type="text"></td>
                 </tr>
             </table>
         </div>
