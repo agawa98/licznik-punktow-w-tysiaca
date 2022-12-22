@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta name="description" content="Licznik punktów w tysiąca">
+    <meta name="keywords" content="tysiąc, tysiąc licznik punktów, licznik punktów, tysiąc gra karciana">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
@@ -9,44 +12,47 @@
 </head>
 <body onload="loadscore()">
     <script src="scripts/script.js"></script>
-    <h1 id="title">Licznik pkt w tysiaca</h1>
-    <div id="tabela">
-        <div id="scoreTableDiv">
-            <table id="scoreTable">
-                <tr id="player1Row">
-                    <td class="totalScore" id="player1Total">0</td>
-                    <td><input id="player1Name" type="text"></td>
+    <div id="wszystko">
+        <h1 id="title">Licznik punktów w tysiąca</h1>
+        <div class="table" id="tabela">
+            <div id="scoreTableDiv">
+                <table id="scoreTable">
+                    <tr id="player1Row">
+                        <td class="totalScore" id="player1Total">0</td>
+                        <td><input id="player1Name" type="text"></td>
+                    </tr>
+                    <tr id="player2Row">
+                        <td class="totalScore" id="player2Total">0</td>
+                        <td><input id="player2Name" type="text"></td>
+                    </tr>
+                    <tr id="player3Row">
+                        <td class="totalScore" id="player3Total">0</td>
+                        <td><input id="player3Name" type="text"></td>
+                    </tr>
+                    <tr id="player4Row">
+                        <td class="totalScore" id="player4Total">0</td>
+                        <td><input id="player4Name" type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            <table id="addScoreTable">
+                <tr>
+                    <td class="addScore"><input id="player1AddScore" type="number"></td>
                 </tr>
-                <tr id="player2Row">
-                    <td class="totalScore" id="player2Total">0</td>
-                    <td><input id="player2Name" type="text"></td>
+                <tr>
+                    <td class="addScore"><input id="player2AddScore" type="number"></td>
                 </tr>
-                <tr id="player3Row">
-                    <td class="totalScore" id="player3Total">0</td>
-                    <td><input id="player3Name" type="text"></td>
+                <tr>
+                    <td class="addScore"><input id="player3AddScore" type="number"></td>
                 </tr>
-                <tr id="player4Row">
-                    <td class="totalScore" id="player4Total">0</td>
-                    <td><input id="player4Name" type="text"></td>
+                <tr>
+                    <td class="addScore"><input id="player4AddScore" type="number"></td>
                 </tr>
             </table>
         </div>
-        <table id="addScoreTable">
-            <tr>
-                <td class="addScore"><input id="player1AddScore" type="number"></td>
-            </tr>
-            <tr>
-                <td class="addScore"><input id="player2AddScore" type="number"></td>
-            </tr>
-            <tr>
-                <td class="addScore"><input id="player3AddScore" type="number"></td>
-            </tr>
-            <tr>
-                <td class="addScore"><input id="player4AddScore" type="number"></td>
-            </tr>
-        </table>
     </div>
-    <button id="newRound" onclick="newRound()">dodaj</button>
+    <button class="funButton" id="clear" onclick="clear">wyczyść</button>
+    <button class="funButton" id="newRound" onclick="newRound()">dodaj</button>
 
 </body>
 </html>

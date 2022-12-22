@@ -1,7 +1,12 @@
 body{
     height: 100vh;
     background: linear-gradient(0deg, rgba(40, 170, 109, 0.589), rgba(59, 144, 201, 0.582));
+    overflow-y: hidden;
+    margin:0;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
+
 
 tr,td{
     border: 2px solid black;
@@ -15,31 +20,32 @@ table{
     border-collapse: collapse;
 }
 
+*{
+    box-sizing: border-box;
+    font-family: lato;
+}
 
 .totalScore{
     min-width: 8vw;
     max-width: 13vw;
 }
 input[type=number]{
-    width: 10vw;
+    width: 9vw;
 }
 input[type=text]{
     width: 15vw;
 }
 
-#scoreTable{
-    max-width: 78vw;
+
+#scoreTableDiv{
+    overflow-x: scroll;
+    width:88vw;
+    margin:0;
     float:left;
     
 }
-#scoreTableDiv{
-    overflow-x: scroll;
-    width:78vw;
-    margin:0;
-    float:left;
-}
 #addScoreTable{
-    width: 10vw;
+    width: 5vw;
     float:right;
 }
 #tabela{
@@ -48,7 +54,14 @@ input[type=text]{
     background-color: rgba(52, 207, 52, 0.288);
     border:3px groove green;
 }
+.funButton{
+    font-size: 2vw;
+    padding:2vw;
+}
 #newRound{
     float:right;
+}
+#clear{
+    float:left;
 }
 
