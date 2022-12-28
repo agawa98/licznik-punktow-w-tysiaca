@@ -3,8 +3,7 @@ body{
     background: linear-gradient(0deg, rgba(40, 170, 109, 0.589), rgba(59, 144, 201, 0.582));
     overflow-y: hidden;
     margin:0;
-    margin-left: 1vw;
-    margin-right: 1vw;
+   
 }
 
 
@@ -37,6 +36,12 @@ input[type=text]{
 }
 
 
+
+#wszystko{
+    margin:0;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 #scoreTableDiv{
     overflow-x: scroll;
     width:88vw;
@@ -63,5 +68,71 @@ input[type=text]{
 }
 #clear{
     float:left;
+}
+
+#winScreen{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    background-color: rgba(72, 134, 189, 0.712);
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    transition-duration: 1s;
+    transition-property: display;
+}
+#winBox{
+    border: 15px groove green;
+    background-color: rgba(255, 166, 0, 0.877);
+    width:25vw;
+    height: 20vh;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition-property: border-color;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#winHeaderWrapper{
+    width:100%;
+    height: 30%;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+#winContentWrapper{
+    width:100%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    height: 45%;
+    font-size: 1.2rem;
+}
+#winButton{
+    position: relative;
+    height: 25%;
+}
+
+
+@media(max-width:998px){
+    .funButton{
+        font-size: 5vw;
+    }
+    #winBox{
+        width: 80vw;
+        height: 25vh;
+        top:40%;
+    }
+    #winButton{
+        font-size: 1rem;
+        padding: .5rem;
+        height: auto;
+    }
+    #winHeaderWrapper, #winContentWrapper, #winButtonWrapper{
+        height:33%;
+    }
 }
 

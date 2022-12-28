@@ -6,7 +6,7 @@
     <meta name="description" content="Licznik punktów w tysiąca">
     <meta name="keywords" content="tysiąc, tysiąc licznik punktów, licznik punktów, tysiąc gra karciana">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Licznik punktów w tysiąca</title>
 </head>
@@ -19,19 +19,19 @@
                 <table id="scoreTable">
                     <tr id="player1Row">
                         <td class="totalScore" id="player1Total">0</td>
-                        <td><input id="player1Name" type="text"></td>
+                        <td><input id="player1Name" maxlength="10" type="text"></td>
                     </tr>
                     <tr id="player2Row">
                         <td class="totalScore" id="player2Total">0</td>
-                        <td><input id="player2Name" type="text"></td>
+                        <td><input id="player2Name" maxlength="10" type="text"></td>
                     </tr>
                     <tr id="player3Row">
                         <td class="totalScore" id="player3Total">0</td>
-                        <td><input id="player3Name" type="text"></td>
+                        <td><input id="player3Name" maxlength="10" type="text"></td>
                     </tr>
                     <tr id="player4Row">
                         <td class="totalScore" id="player4Total">0</td>
-                        <td><input id="player4Name" type="text"></td>
+                        <td><input id="player4Name" maxlength="10" type="text"></td>
                     </tr>
                 </table>
             </div>
@@ -50,9 +50,24 @@
                 </tr>
             </table>
         </div>
+        <button class="funButton" id="clear" onclick="clear">wyczyść</button>
+        <button class="funButton" id="newRound" onclick="newRound()">dodaj</button>
     </div>
-    <button class="funButton" id="clear" onclick="clear">wyczyść</button>
-    <button class="funButton" id="newRound" onclick="newRound()">dodaj</button>
+    <div id="winScreen">
+        <div id="winBox">
+            <div id="winHeaderWrapper">
+                uzytkownik wygrywa
+            </div>
+
+            <div id="winContentWrapper">
+                uzytkownik rucha wam wszystkim matki
+            </div>
+            <div id="winButtonWrapper">
+                <button id="winButton">Kontynuuj</button>
+            </div>
+        </div>
+    </div>
+    
 
 </body>
 </html>
